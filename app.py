@@ -1,7 +1,6 @@
 import streamlit as st
 import requests
 import pandas as pd
-import numpy as np
 
 st.title("Taxi Fares in New York City :taxi:")
 st.markdown(
@@ -51,7 +50,7 @@ data_map = pd.DataFrame(
 )
 
 
-st.markdown("*Map with the location (in red pick, in Blue dropoff)*")
+st.markdown("*Map with the location (in red pickup, in blue dropoff)*")
 ## Create a map with the data
 st.map(data_map, color="status", size=20)
 
